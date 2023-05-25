@@ -47,6 +47,10 @@ public class OrderServiceImplTests {
 
         OrderForm orderForm = new OrderForm();
         orderForm.setCurrency(Currency.MKD);
+        orderForm.setAddress("Adresa1");
+        orderForm.setCity("Kumanovo");
+        orderForm.setCountry("Macedonia");
+        orderForm.setPostalCode("1300");
         orderForm.setItems(Arrays.asList(oi1,oi2));
 
         OrderId newOrderId = orderService.placeOrder(orderForm);
@@ -71,6 +75,10 @@ public class OrderServiceImplTests {
 
         OrderForm orderForm = new OrderForm();
         orderForm.setCurrency(Currency.MKD);
+        orderForm.setAddress("Adresa1");
+        orderForm.setCity("Kumanovo");
+        orderForm.setCountry("Macedonia");
+        orderForm.setPostalCode("1300");
         orderForm.setItems(Arrays.asList(oi1,oi2));
 
         OrderId newOrderId = orderService.placeOrder(orderForm);
